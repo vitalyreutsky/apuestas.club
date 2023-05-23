@@ -1,0 +1,20 @@
+.shadow {
+  box-shadow: 0px 5px 10px rgba(17, 40, 57, 0.03);
+  &--large {
+    box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.03),
+      0px 5px 8px rgba(17, 40, 57, 0.12);
+  }
+  &--small {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
+  }
+  &--solid {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.22);
+  }
+  &--select {
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  &--button {
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.14), 0px 1px 1px rgba(0, 0, 0, 0.12),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

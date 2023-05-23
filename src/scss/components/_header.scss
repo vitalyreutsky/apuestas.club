@@ -1,0 +1,118 @@
+.header {
+  position: sticky;
+  top: 20px;
+  padding: 0 5px 20px;
+  height: calc(100vh - 20px);
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  z-index: 2;
+  &::-webkit-scrollbar {
+    background: transparent;
+    width: 3px;
+    height: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #cdd3d7;
+    border-radius: 3px;
+  }
+  &__logo {
+    display: block;
+    text-align: center;
+    width: 170px;
+    margin: auto;
+  }
+  &__menu {
+    margin-top: 28px;
+    span {
+      color: var(--gray-text);
+      font-size: 12px;
+      font-family: "Exo-Bold";
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0 6px;
+    }
+  }
+  ul {
+    margin: 0 0 24px;
+    li {
+      margin: 2px 4px;
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 4px 6px;
+        font-family: "Exo-Medium";
+        font-size: 14px;
+        border-radius: 4px;
+        color: var(--basic);
+        i {
+          margin-right: 8px;
+          width: 32px;
+          height: 32px;
+          background-color: var(--gray-bg);
+          border-radius: 50%;
+          .svg-icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--basic);
+          }
+        }
+        span {
+          background-color: var(--red);
+          border-radius: 4px;
+          color: var(--white);
+          margin-left: 8px;
+          font-size: 11px;
+          line-height: 13.2px;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 3px;
+          height: 100%;
+          visibility: hidden;
+          border-radius: 0 6px 6px 0;
+          background-color: var(--accent);
+        }
+      }
+      &:hover,
+      &.active {
+        a {
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
+          border-radius: 6px;
+          background-color: var(--white);
+          color: var(--accent);
+          &::after {
+            visibility: visible;
+          }
+          .svg-icon {
+            fill: var(--accent);
+          }
+        }
+      }
+    }
+    &.bg-gray {
+      background-color: #efeff6;
+      border-radius: 8px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+  }
+  &__auth {
+    width: 144px;
+    margin: auto;
+    .btn {
+      display: block;
+      text-align: center;
+      margin: 8px 0 0 0;
+      padding: 9px 20px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.nav {
+}
+.review-navigation {
+}
+
+.navigation {
+  border-bottom: 1px solid #e6eaee;
+  &__list {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    gap: 32px;
+    min-width: 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      background: transparent;
+      width: 3px;
+      height: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      background: #cdd3d7;
+      cursor: pointer;
+    }
+  }
+
+  &__item {
+    padding: 12px 0px;
+    background: #fff;
+    min-width: fit-content;
+    cursor: pointer;
+    // position: sticky;
+    // top: 0;
+    // z-index: 2;
+  }
+}

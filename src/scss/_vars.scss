@@ -1,0 +1,31 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family-SF-Pro-Text-Regular: "SF-Pro-Text-Regular", sans-serif;
+  --font-family-Exo-Regular: "Exo-Regular", sans-serif;
+  --font-family-Exo-Medium: "Exo-Medium", sans-serif;
+  --font-family-Exo-Bold: "Exo-Bold", sans-serif;
+
+  --content-width: 1280px;
+
+  // colors
+  --basic: #31353b;
+  --accent: #00b073;
+  --hover: #00a46b;
+  --green-dark: #009561;
+  --blue: #1584e3;
+  --blue-light: #3993ff;
+  --star: #fba744;
+  --yellow: #ffd705;
+  --orange-dark: #f87700;
+  --red: #f32657;
+  --gray-text: #737c88;
+  --gray-element: #c7cdcf;
+  --gray-control-border: #d9dee2;
+  --gray-line: #e6eaee;
+  --gray-control-bg: #ebeff2;
+  --gray-bg: #f1f5f8;
+  --bg-page: #f7f7fb;
+  --white: #fff;
+}

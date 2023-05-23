@@ -1,0 +1,16 @@
+// SF-Pro-Text-Regular
+@include font-face(
+  "SF-Pro-Text-Regular",
+  "../fonts/SF-Pro-Text-Regular",
+  400,
+  normal
+);
+
+// Exo-Regular
+@include font-face("Exo-Regular", "../fonts/Exo-Regular", 400, normal);
+
+// Exo-Medium
+@include font-face("Exo-Medium", "../fonts/Exo-Medium", 500, normal);
+
+// Exo-Bold
+@include font-face("Exo-Bold", "../fonts/Exo-Bold", 700, normal);
