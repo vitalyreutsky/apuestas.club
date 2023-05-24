@@ -1,0 +1,31 @@
+.support {
+  margin-bottom: 42px;
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  .sports__right {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .sports-item {
+    border: 1px solid var(--gray-line);
+  }
+
+  .sports-item__bottom {
+    padding-top: 40px;
+    border: none;
+
+    .h5 {
+      text-align: center;
+      word-break: break-all;
+    }
+  }
+
+  .sports-item__info {
+    gap: 5px;
+  }
+}

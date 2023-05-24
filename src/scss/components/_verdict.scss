@@ -1,0 +1,44 @@
+.verdict {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 12px;
+  .rating span svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.verdict {
+  &__left {
+    .sports-item {
+      height: 100%;
+      padding: 12px;
+      img {
+        position: static;
+        width: 110px;
+        height: auto;
+        transform: translate(0);
+        padding-bottom: 12px;
+      }
+
+      &__info {
+        gap: 8px;
+      }
+    }
+  }
+
+  &__right {
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 12px;
+  }
+
+  &__btn {
+    display: inline-block;
+  }
+}

@@ -3,6 +3,7 @@
   "version": "2.1.0",
   "description": "gulp-builder for weblayout",
   "main": "gulpfile.js",
+  "homepage": "https://vitalyreutsky.github.io/apuestas",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
     "dev": "gulp",
@@ -10,7 +11,8 @@
     "cache": "gulp cache",
     "backend": "gulp backend",
     "zip": "gulp zip",
-    "code": "editorconfig-checker"
+    "code": "editorconfig-checker",
+    "deploy": "gh-pages -d app"
   },
   "author": "Vitaly Reutsky",
   "license": "ISC",
@@ -56,6 +58,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.2",
     "aos": "^2.3.4",
+    "gh-pages": "^5.0.0",
     "graph-modal": "^1.0.4",
     "graph-tabs": "^1.0.0",
     "inputmask": "^5.0.7",

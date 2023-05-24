@@ -9,7 +9,21 @@
         @include('partials/review-banner.html')
 
         <div class="aside-wrapper">
-          <div class="content">@include('partials/navigation.html')</div>
+          <div class="content page__content">
+            <div class="page__content-wrapper">
+              @include('partials/navigation.html')
+              @include('partials/review-info.html')
+              @include('partials/pros-cons.html')
+              @include('partials/bonuses.html')
+              @include('partials/demographics.html')
+              @include('partials/mobile.html') @include('partials/sports.html')
+              @include('partials/mobile.html') @include('partials/license.html')
+              @include('partials/deposits.html')
+              @include('partials/support.html')
+              @include('partials/verdict.html')
+            </div>
+            @include('partials/faq.html')
+          </div>
           <div class="aside">@include('partials/aside.html')</div>
         </div>
       </div>

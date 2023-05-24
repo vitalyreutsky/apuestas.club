@@ -2,8 +2,11 @@
   &__banner {
     display: flex;
     flex-direction: column;
-    gap: 12px;
     margin-bottom: 35px;
+    padding: 6px;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   &__banner-wrapper {
@@ -16,7 +19,6 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 8px;
-    overflow: hidden;
   }
 
   &__banner-content {
@@ -73,13 +75,30 @@
   &__banner-items {
     display: flex;
     gap: 33.6px;
+    padding: 12px 0px;
   }
 }
 
 .banner-item {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 42px;
+    background-color: var(--gray-line);
+  }
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
   img {
     width: 40px;
     height: 40px;
@@ -87,10 +106,9 @@
   &__info {
     span {
       font-family: var(--font-family-Exo-Bold);
+      color: var(--basic);
       font-size: 18px;
       line-height: 19.8px;
     }
   }
-}
-.p3 {
 }

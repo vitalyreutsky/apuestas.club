@@ -45,4 +45,11 @@
       }
     }
   }
+  &--border {
+    background-color: transparent;
+    color: var(--accent);
+    &:hover {
+      color: var(--white);
+    }
+  }
 }

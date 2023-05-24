@@ -1,18 +1,18 @@
-.nav {
-}
-.review-navigation {
+.review__navigation {
+  margin-bottom: 32px;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 .navigation {
-  border-bottom: 1px solid #e6eaee;
   &__list {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    position: relative;
     display: flex;
-    gap: 32px;
+    // gap: 32px;
+    justify-content: space-between;
     min-width: 100%;
+    border-bottom: 1px solid #e6eaee;
     overflow-x: auto;
     &::-webkit-scrollbar {
       background: transparent;
@@ -21,18 +21,27 @@
     }
     &::-webkit-scrollbar-thumb {
       border-radius: 3px;
-      background: #cdd3d7;
+      // background: #cdd3d7;
       cursor: pointer;
     }
   }
 
   &__item {
+    position: relative;
     padding: 12px 0px;
-    background: #fff;
     min-width: fit-content;
     cursor: pointer;
-    // position: sticky;
-    // top: 0;
-    // z-index: 2;
+    &--active {
+      color: var(--accent);
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent);
+      }
+    }
   }
 }

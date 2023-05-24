@@ -1,0 +1,107 @@
+.pros-cons {
+  margin-bottom: 42px;
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 23px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--gray-line);
+  }
+  &__more {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 43px;
+    }
+
+    .btn--border {
+      width: 43px;
+      font-weight: 300;
+      font-size: 26px;
+      line-height: 31.2px;
+      border: 1.5px solid var(--accent);
+    }
+  }
+}
+
+.benefits-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    .h3 {
+      color: var(--white);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__icons {
+    display: flex;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+    span {
+      font-family: inherit;
+      &:first-of-type {
+        margin-left: 6px;
+      }
+      &:last-child {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.benefits-text {
+  margin-bottom: 30px;
+}
+.benefits-profit {
+  display: flex;
+  gap: 21px;
+
+  &__check,
+  &__false {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+    border: 1px solid var(--gray-line);
+    border-radius: 8px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &__text {
+    color: var(--basic);
+  }
+}
