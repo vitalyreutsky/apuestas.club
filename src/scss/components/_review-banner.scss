@@ -36,8 +36,8 @@
   }
 
   &__banner-title {
-    margin-bottom: 16px;
-    color: var(--white);
+    margin-bottom: 16px !important;
+    color: var(--white) !important;
   }
 
   &__banner-info {

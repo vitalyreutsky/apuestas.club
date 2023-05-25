@@ -5,478 +5,477 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <div>@include('partials/header.html')</div>
+      <div>
+        <header class="header">
+          <div class="header__top">
+            <a class="header__logo" href="/"
+              ><img src="img/logo.png" alt="" srcset=""
+            /></a>
+            <div class="header__menu">
+              <span>Betting</span>
+              <ul>
+                <li>
+                  <a href="/betting-sites.html"
+                    ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                      ><svg class="svg-icon">
+                        <use
+                          xlink:href="./img/sprite.svg#menu-star"
+                        ></use></svg></i
+                    >Betting Sites</a
+                  >
+                </li>
+                <li class="active">
+                  <a href="best-betting-sites.html"
+                    ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                      ><svg class="svg-icon">
+                        <use
+                          xlink:href="./img/sprite.svg#menu-cup"
+                        ></use></svg></i
+                    >Best Betting Sites</a
+                  >
+                </li>
+                <li>
+                  <a href="betting-offer.html"
+                    ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                      ><svg class="svg-icon">
+                        <use
+                          xlink:href="./img/sprite.svg#menu-gift"
+                        ></use></svg></i
+                    >Betting Offers</a
+                  >
+                </li>
+                <li>
+                  <a href="free-bets.html"
+                    ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                      ><svg class="svg-icon">
+                        <use
+                          xlink:href="./img/sprite.svg#menu-fire"
+                        ></use></svg></i
+                    >Free Bets</a
+                  >
+                </li>
+                <li>
+                  <a href="new-betting.html"
+                    ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                      ><svg class="svg-icon">
+                        <use
+                          xlink:href="./img/sprite.svg#menu-rocket"
+                        ></use></svg></i
+                    >New Betting Sites</a
+                  >
+                </li>
+              </ul>
+              <span>Tips</span>
+              <ul class="bg-gray">
+                <li>
+                  <a href="/"
+                    ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                      ><svg class="svg-icon">
+                        <use
+                          xlink:href="./img/sprite.svg#menu-events"
+                        ></use></svg></i
+                    >Predictions<span>48</span></a
+                  >
+                </li>
+                <li>
+                  <a href="/events.html"
+                    ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                      ><svg class="svg-icon">
+                        <use
+                          xlink:href="./img/sprite.svg#menu-ball"
+                        ></use></svg></i
+                    >Events<span>864</span></a
+                  >
+                </li>
+                <li>
+                  <a href="/"
+                    ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                      ><svg class="svg-icon">
+                        <use
+                          xlink:href="./img/sprite.svg#menu-tipsters"
+                        ></use></svg></i
+                    >Tipsters</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <ul>
+              <li>
+                <a href="blog.html"
+                  ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                    ><svg class="svg-icon">
+                      <use
+                        xlink:href="./img/sprite.svg#menu-blog"
+                      ></use></svg></i
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                    ><svg class="svg-icon">
+                      <use xlink:href="./img/sprite.svg#menu-i"></use></svg></i
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="d-flex d-flex-ai-center d-flex-jc-center"
+                    ><svg class="svg-icon">
+                      <use
+                        xlink:href="./img/sprite.svg#menu-mail"
+                      ></use></svg></i
+                  >Contact
+                </a>
+              </li>
+            </ul>
+            <div class="header__auth">
+              <a class="btn btn--border" href="/">Log In</a
+              ><a class="btn" href="/">Join Now</a>
+            </div>
+          </div>
+        </header>
+      </div>
       <div>
         <div class="aside-wrapper">
           <div class="content">
-            <section class="bg-white shadow banner">
-              <p class="h2">Exclusive Free Bets</p>
+            <section class="bg-white shadow banner-bonuses">
               <div
-                class="banner__container d-flex d-flex-ai-center d-flex-jc-start"
+                class="banner-bonuses__container"
+                style="background-image: url(./img/banners/banner-bonuses.png)"
               >
-                <div class="banner__slider swiper bonuses-plate">
-                  <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide banner__item bonus bonuses-plate__item shadow bg-white d-flex d-flex-ff-column d-flex-jc-between"
-                    >
-                      <div class="label">¡Oferta exclusiva!</div>
-                      <div class="d-flex d-flex-ai-center">
-                        <div
-                          class="bonus__logo d-flex d-flex-ai-center d-flex-jc-center"
-                        >
-                          <img src="./img/bookmakers/bet365.png" alt="" />
-                        </div>
-                        <div class="bonuses-plate__content">
-                          <p class="h3"><span>£15</span> Free Bet</p>
-                        </div>
-                      </div>
-                      <div class="bonuses-plate__bottom">
-                        <p class="p3">
-                          Claim a generous 200% Cash Bonus up to £200 on Your
-                          First Deposit!
-                        </p>
-                        <div class="d-flex d-flex-ai-center d-flex-jc-between">
-                          <div class="info d-flex d-flex-ai-center">
-                            <div class="info__column">
-                              <p class="p4 p4--bold">Min Bet</p>
-                              <p class="p2 p2--bold">€0.10</p>
-                            </div>
-                            <div class="info__column">
-                              <p class="p4 p4--bold">Min Odds</p>
-                              <p class="p2 p2--bold">1.80</p>
-                            </div>
-                          </div>
-                          <a class="btn" href="single-bonus.html"
-                            >Claim Bonus</a
-                          >
-                        </div>
+                <div class="bonus banner-bonuses__bonus">
+                  <a
+                    class="bonus__logo d-flex d-flex-ff-column d-flex-ai-center d-flex-jc-center"
+                    href="review.html"
+                    ><img src="./img/bookmakers/Sky-Bet-Logo-2.png" alt=""
+                  /></a>
+                  <p class="h1">
+                    Deposit and bet €10 to get a €30 Free Bet (Code: MW30)
+                  </p>
+                  <div class="d-flex d-flex-ai-center">
+                    <div class="bonus__info info d-flex d-flex-ai-center">
+                      <div class="info__column">
+                        <p class="p3 p3--bold">min bet</p>
+                        <p class="h4">€0.10</p>
                       </div>
                     </div>
+                    <a class="btn" href="single-bonus.html">Claim Bonus</a>
+                  </div>
+                  <div class="bonus__tc p5">
+                    <p>
+                      18+ Full T&Cs Apply. New players Only. £10 min deposit. £5
+                      max bet using bonus. 40x wagering applies. Bonus valid for
+                      14 days. 30 Spins will be credited instantly upon
+                      qualifying deposit + then 30 per day for 9 days on
+                      Starburst. Free Spins valid for 72 hours from credit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-bonuses__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide bonus banner-bonuses__item center">
+                    <a
+                      class="bonus__logo d-flex d-flex-ff-column d-flex-ai-center d-flex-jc-center"
+                      href="/"
+                      ><img src="./img/bookmakers/bet365.png" alt=""
+                    /></a>
+                    <p class="p2"><span>£15</span> Free Bet</p>
                     <div
-                      class="swiper-slide banner__item bonus bonuses-plate__item shadow bg-white d-flex d-flex-ff-column d-flex-jc-between"
+                      class="banner-bonuses__info d-flex d-flex-ai-center d-flex-jc-center bg-white"
                     >
-                      <div class="label">¡Oferta exclusiva!</div>
-                      <div class="d-flex d-flex-ai-center">
-                        <div
-                          class="bonus__logo d-flex d-flex-ai-center d-flex-jc-center"
-                        >
-                          <img src="./img/bookmakers/betway.png" alt="" />
-                        </div>
-                        <div class="bonuses-plate__content">
-                          <p class="h3"><span>£30</span> Free Bet</p>
-                        </div>
-                      </div>
-                      <div class="bonuses-plate__bottom">
-                        <p class="p3">
-                          Bet £20, Get £10 Free Bet & Join Karamba Battle with
-                          £3000 Cash Prize Pool
-                        </p>
-                        <div class="d-flex d-flex-ai-center d-flex-jc-between">
-                          <div class="info d-flex d-flex-ai-center">
-                            <div class="info__column">
-                              <p class="p4 p4--bold">Min Bet</p>
-                              <p class="p2 p2--bold">€0.10</p>
-                            </div>
-                            <div class="info__column">
-                              <p class="p4 p4--bold">Min Odds</p>
-                              <p class="p2 p2--bold">1.80</p>
-                            </div>
-                          </div>
-                          <a class="btn" href="single-bonus.html"
-                            >Claim Bonus</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide banner__item bonus bonuses-plate__item shadow bg-white d-flex d-flex-ff-column d-flex-jc-between"
-                    >
-                      <div class="label">¡Oferta exclusiva!</div>
-                      <div class="d-flex d-flex-ai-center">
-                        <div
-                          class="bonus__logo d-flex d-flex-ai-center d-flex-jc-center"
-                        >
-                          <img src="./img/bookmakers/Sky-Bet-Logo.png" alt="" />
-                        </div>
-                        <div class="bonuses-plate__content">
-                          <p class="h3"><span>£25</span> Free Bet</p>
-                        </div>
-                      </div>
-                      <div class="bonuses-plate__bottom">
-                        <p class="p3">
-                          Bet £20, Get £10 Free Bet & Join Karamba Battle with
-                          £3000 Cash Prize Pool
-                        </p>
-                        <div class="d-flex d-flex-ai-center d-flex-jc-between">
-                          <div class="info d-flex d-flex-ai-center">
-                            <div class="info__column">
-                              <p class="p4 p4--bold">Min Bet</p>
-                              <p class="p2 p2--bold">€0.10</p>
-                            </div>
-                            <div class="info__column">
-                              <p class="p4 p4--bold">Min Odds</p>
-                              <p class="p2 p2--bold">1.80</p>
-                            </div>
-                          </div>
-                          <a class="btn" href="single-bonus.html"
-                            >Claim Bonus</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide banner__item bonus bonuses-plate__item shadow bg-white d-flex d-flex-ff-column d-flex-jc-between"
-                    >
-                      <div class="label">¡Oferta exclusiva!</div>
-                      <div class="d-flex d-flex-ai-center">
-                        <div
-                          class="bonus__logo d-flex d-flex-ai-center d-flex-jc-center"
-                        >
-                          <img src="./img/bookmakers/ladbrokes.png" alt="" />
-                        </div>
-                        <div class="bonuses-plate__content">
-                          <p class="h3"><span>£25</span> Free Bet</p>
-                        </div>
-                      </div>
-                      <div class="bonuses-plate__bottom">
-                        <p class="p3">
-                          Claim a generous 200% Cash Bonus up to £200 on Your
-                          First Deposit!
-                        </p>
-                        <div class="d-flex d-flex-ai-center d-flex-jc-between">
-                          <div class="info d-flex d-flex-ai-center">
-                            <div class="info__column">
-                              <p class="p4 p4--bold">Min Bet</p>
-                              <p class="p2 p2--bold">€0.10</p>
-                            </div>
-                            <div class="info__column">
-                              <p class="p4 p4--bold">Min Odds</p>
-                              <p class="p2 p2--bold">1.80</p>
-                            </div>
-                          </div>
-                          <a class="btn" href="single-bonus.html"
-                            >Claim Bonus</a
-                          >
-                        </div>
-                      </div>
+                      <p class="p2 p2--bold">Passing now</p>
                     </div>
                   </div>
-                  <div class="banner__pagination"></div>
-                  <div class="button-next banner__navigation">
-                    <svg class="svg-icon">
-                      <use xlink:href="./img/sprite.svg#banner-arrow"></use>
-                    </svg>
+                  <div class="swiper-slide bonus banner-bonuses__item center">
+                    <a
+                      class="bonus__logo d-flex d-flex-ff-column d-flex-ai-center d-flex-jc-center"
+                      href="/"
+                      ><img src="./img/bookmakers/betway.png" alt=""
+                    /></a>
+                    <p class="p2"><span>£30</span> Free Bet</p>
+                    <div
+                      class="banner-bonuses__info d-flex d-flex-ai-center d-flex-jc-center bg-white"
+                    >
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprite.svg#timer-small"></use>
+                      </svg>
+                      <p class="p2 p2--bold">08m 43s</p>
+                    </div>
                   </div>
-                  <div class="button-prev banner__navigation">
-                    <svg class="svg-icon">
-                      <use xlink:href="./img/sprite.svg#banner-arrow"></use>
-                    </svg>
+                  <div class="swiper-slide bonus banner-bonuses__item center">
+                    <a
+                      class="bonus__logo d-flex d-flex-ff-column d-flex-ai-center d-flex-jc-center"
+                      href="/"
+                      ><img src="./img/bookmakers/Sky-Bet-Logo.png" alt=""
+                    /></a>
+                    <p class="p2"><span>£25</span> Free Bet</p>
+                    <div
+                      class="banner-bonuses__info d-flex d-flex-ai-center d-flex-jc-center bg-white"
+                    >
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprite.svg#timer-small"></use>
+                      </svg>
+                      <p class="p2 p2--bold">18m 43s</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide bonus banner-bonuses__item center">
+                    <a
+                      class="bonus__logo d-flex d-flex-ff-column d-flex-ai-center d-flex-jc-center"
+                      href="/"
+                      ><img src="./img/bookmakers/ladbrokes.png" alt=""
+                    /></a>
+                    <p class="p2"><span>£25</span> Free Bet</p>
+                    <div
+                      class="banner-bonuses__info d-flex d-flex-ai-center d-flex-jc-center bg-white"
+                    >
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprite.svg#timer-small"></use>
+                      </svg>
+                      <p class="p2 p2--bold">28m 43s</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="button-next banner-bonuses__navigation d-flex d-flex-ai-center d-flex-jc-center"
+              >
+                <svg class="svg-icon">
+                  <use xlink:href="./img/sprite.svg#banner-arrow"></use>
+                </svg>
+              </div>
+              <div
+                class="button-prev banner-bonuses__navigation d-flex d-flex-ai-center d-flex-jc-center"
+              >
+                <svg class="svg-icon">
+                  <use xlink:href="./img/sprite.svg#banner-arrow"></use>
+                </svg>
+              </div>
+            </section>
+            <section class="bg-white shadow content-block nav-section">
+              <div class="d-flex d-flex-ai-stretch">
+                <div class="navigation d-flex d-flex-ai-start">
+                  <div class="navigation__content">
+                    <h1>Best Betting Sites & Bonuses</h1>
+                    <p>
+                      Todos los mejores sitios de apuestas en Spain ofrecen
+                      servicios confiables y tienen una reputación positiva
+                      entre nuestros expertos. Cada marca se clasifica de
+                      acuerdo con aspectos importantes que incluyen seguridad de
+                      pago de apuestas y ofertas de bonificación, todo diseñado
+                      para ayudarlo a maximizar sus ganancias.
+                    </p>
+                  </div>
+                  <div class="navigation__list navigation__list--filter">
+                    <div class="critics bg-white">
+                      <p class="label">recommended by</p>
+                      <div
+                        class="critics__author author d-flex d-flex-ai-center"
+                      >
+                        <div class="author__avatar">
+                          <img src="./img/critics.png" alt="" /><svg
+                            class="svg-icon"
+                          >
+                            <use xlink:href="./img/sprite.svg#verified"></use>
+                          </svg>
+                        </div>
+                        <div class="author__info">
+                          <p class="h4">Mark Seibert</p>
+                          <p class="p3">Betting Expert</p>
+                        </div>
+                      </div>
+                      <div class="critics__content"></div>
+                      <div class="critics__info d-flex d-flex-ai-center">
+                        <div class="critics__info-item">
+                          <p class="p4 p4--bold">PROFIT</p>
+                          <p class="p4 p4--bold value">1º</p>
+                        </div>
+                        <div class="critics__info-item">
+                          <p class="p4 p4--bold">experience</p>
+                          <p class="p4 p4--bold value">6 years</p>
+                        </div>
+                        <div class="critics__info-item">
+                          <p class="p4 p4--bold">reviews</p>
+                          <p class="p4 p4--bold value">320</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="btn btn--gray btn--filter js-toggle d-flex d-flex-ai-center"
+                      data-id="filter"
+                    >
+                      <svg class="svg-icon svg-filter">
+                        <use xlink:href="./img/sprite.svg#filter"></use></svg
+                      >Filter by feature<svg class="svg-icon svg-arrow">
+                        <use xlink:href="./img/sprite.svg#arrow"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="filter bg-white toggle-wrap" data-id="filter">
+                <div class="filter__item">
+                  <p class="h4">Bookmakers Rating</p>
+                  <div class="filter__rating">
+                    <label class="d-flex d-flex-ai-center">
+                      <input type="radio" name="rating" /><span
+                        class="border d-flex d-flex-ai-center"
+                        ><svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use></svg
+                      ></span>
+                    </label>
+                    <label class="d-flex d-flex-ai-center">
+                      <input type="radio" name="rating" /><span
+                        class="border d-flex d-flex-ai-center"
+                        ><svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="transparent">
+                          <use xlink:href="/img/sprite.svg#star"></use></svg
+                      ></span>
+                    </label>
+                    <label class="d-flex d-flex-ai-center">
+                      <input type="radio" name="rating" /><span
+                        class="border d-flex d-flex-ai-center"
+                        ><svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="transparent">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="transparent">
+                          <use xlink:href="/img/sprite.svg#star"></use></svg
+                      ></span>
+                    </label>
+                    <label class="d-flex d-flex-ai-center">
+                      <input type="radio" name="rating" /><span
+                        class="border d-flex d-flex-ai-center"
+                        ><svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="#FBA744">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="transparent">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="transparent">
+                          <use xlink:href="/img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="svg-icon" fill="transparent">
+                          <use xlink:href="/img/sprite.svg#star"></use></svg
+                      ></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter__item">
+                  <p class="h4">With Type Of Bonus</p>
+                  <div
+                    class="filter__type d-flex d-flex-ai-center d-flex-jc-between"
+                  >
+                    <label>
+                      <input type="checkbox" name="type" /><span class="border"
+                        ><span class="d-flex d-flex-ff-column d-flex-ai-center"
+                          ><svg class="svg-icon">
+                            <use xlink:href="/img/sprite.svg#cashback"></use>
+                          </svg>
+                          <p class="p3 p3--bold">Cashback</p></span
+                        ></span
+                      >
+                    </label>
+                    <label>
+                      <input type="checkbox" name="type" /><span class="border"
+                        ><span class="d-flex d-flex-ff-column d-flex-ai-center"
+                          ><svg class="svg-icon">
+                            <use xlink:href="/img/sprite.svg#acca"></use>
+                          </svg>
+                          <p class="p3 p3--bold">Acca Insurance</p></span
+                        ></span
+                      >
+                    </label>
+                    <label>
+                      <input type="checkbox" name="type" /><span class="border"
+                        ><span class="d-flex d-flex-ff-column d-flex-ai-center"
+                          ><svg class="svg-icon">
+                            <use xlink:href="/img/sprite.svg#combined"></use>
+                          </svg>
+                          <p class="p3 p3--bold">Combined</p></span
+                        ></span
+                      >
+                    </label>
+                    <label>
+                      <input type="checkbox" name="type" /><span class="border"
+                        ><span class="d-flex d-flex-ff-column d-flex-ai-center"
+                          ><svg class="svg-icon">
+                            <use xlink:href="/img/sprite.svg#timer"></use>
+                          </svg>
+                          <p class="p3 p3--bold">Early Payout</p></span
+                        ></span
+                      >
+                    </label>
                   </div>
                 </div>
               </div>
             </section>
-          </div>
-          <div class="aside">
-            <aside class="shadow aside-rating bg-white">
-              <p class="h4">Top Free Bets</p>
-              <div class="aside-rating__wrapper">
-                <div class="aside-rating__item">
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <p class="h5">10bet</p>
-                    <p class="h5"><span>£15</span> Free Bet</p>
-                  </div>
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <div class="rating d-flex d-flex-ai-center">
-                      <span class="d-flex d-flex-ai-center"
-                        ><svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use></svg
-                      ></span>
-                    </div>
-                    <p class="p4">20X Turnover</p>
-                  </div>
-                  <a href="/"> </a>
-                </div>
-                <div class="aside-rating__item">
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <p class="h5">10bet</p>
-                    <p class="h5"><span>£30</span> Free Bet</p>
-                  </div>
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <div class="rating d-flex d-flex-ai-center">
-                      <span class="d-flex d-flex-ai-center"
-                        ><svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use></svg
-                      ></span>
-                    </div>
-                    <p class="p4">20X Turnover</p>
-                  </div>
-                  <a href="/"> </a>
-                </div>
-                <div class="aside-rating__item">
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <p class="h5">10bet</p>
-                    <p class="h5"><span>£25</span> Free Bet</p>
-                  </div>
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <div class="rating d-flex d-flex-ai-center">
-                      <span class="d-flex d-flex-ai-center"
-                        ><svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use></svg
-                      ></span>
-                    </div>
-                    <p class="p4">20X Turnover</p>
-                  </div>
-                  <a href="/"> </a>
-                </div>
-                <div class="aside-rating__item">
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <p class="h5">10bet</p>
-                    <p class="h5"><span>£25</span> Free Bet</p>
-                  </div>
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <div class="rating d-flex d-flex-ai-center">
-                      <span class="d-flex d-flex-ai-center"
-                        ><svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use></svg
-                      ></span>
-                    </div>
-                    <p class="p4">20X Turnover</p>
-                  </div>
-                  <a href="/"> </a>
-                </div>
-                <div class="aside-rating__item">
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <p class="h5">10bet</p>
-                    <p class="h5"><span>£15</span> Free Bet</p>
-                  </div>
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <div class="rating d-flex d-flex-ai-center">
-                      <span class="d-flex d-flex-ai-center"
-                        ><svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use></svg
-                      ></span>
-                    </div>
-                    <p class="p4">20X Turnover</p>
-                  </div>
-                  <a href="/"> </a>
-                </div>
-                <div class="aside-rating__item">
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <p class="h5">10bet</p>
-                    <p class="h5"><span>£30</span> Free Bet</p>
-                  </div>
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <div class="rating d-flex d-flex-ai-center">
-                      <span class="d-flex d-flex-ai-center"
-                        ><svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use></svg
-                      ></span>
-                    </div>
-                    <p class="p4">20X Turnover</p>
-                  </div>
-                  <a href="/"> </a>
-                </div>
-                <div class="aside-rating__item">
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <p class="h5">10bet</p>
-                    <p class="h5"><span>£25</span> Free Bet</p>
-                  </div>
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <div class="rating d-flex d-flex-ai-center">
-                      <span class="d-flex d-flex-ai-center"
-                        ><svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use></svg
-                      ></span>
-                    </div>
-                    <p class="p4">20X Turnover</p>
-                  </div>
-                  <a href="/"> </a>
-                </div>
-                <div class="aside-rating__item">
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <p class="h5">10bet</p>
-                    <p class="h5"><span>£25</span> Free Bet</p>
-                  </div>
-                  <div class="d-flex d-flex-jc-between d-flex-ai-center">
-                    <div class="rating d-flex d-flex-ai-center">
-                      <span class="d-flex d-flex-ai-center"
-                        ><svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="#FBA744">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use>
-                        </svg>
-                        <svg class="svg-icon" fill="transparent">
-                          <use xlink:href="./img/sprite.svg#star"></use></svg
-                      ></span>
-                    </div>
-                    <p class="p4">20X Turnover</p>
-                  </div>
-                  <a href="/"> </a>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </div>
-        <div class="content">
-          <section class="bg-white shadow content-block nav-section">
-            <div class="d-flex d-flex-ai-stretch">
-              <div class="navigation d-flex d-flex-ai-start">
-                <div class="navigation__content">
-                  <h1>Best Betting Sites & Bonuses</h1>
-                  <p>
-                    Are you looking for the best online sportsbooks, but don’t
-                    know where to begin? Allow us to help. Take a look at the
-                    four basic steps you can take to find a safe and fun site to
-                    bet on your favorite sport today.
-                  </p>
-                </div>
-                <div class="navigation__list">
-                  <a class="navigation__item d-flex d-flex-ai-center" href=""
-                    ><i
-                      class="bg-icon"
-                      style="background-image: url('./img/icons/nav-star.png')"
-                    ></i
-                    ><span class="content">
-                      <p class="p2 p2--bold">Best betting sites</p>
-                      <p class="p2">good betting offer?</p></span
-                    ></a
-                  ><a class="navigation__item d-flex d-flex-ai-center" href=""
-                    ><i
-                      class="bg-icon"
-                      style="background-image: url('./img/icons/nav-fire.png')"
-                    ></i
-                    ><span class="content">
-                      <p class="p2 p2--bold">Main leagues</p>
-                      <p class="p2">before betting</p></span
-                    ></a
-                  >
-                </div>
-              </div>
-              <div class="critics bg-white">
-                <p class="label">recommended by</p>
-                <div class="critics__author author d-flex d-flex-ai-center">
-                  <div class="author__avatar">
-                    <img src="./img/critics.png" alt="" /><svg class="svg-icon">
-                      <use xlink:href="./img/sprite.svg#verified"></use>
-                    </svg>
-                  </div>
-                  <div class="author__info">
-                    <p class="h4">Mark Seibert</p>
-                    <p class="p3">Betting Expert</p>
-                  </div>
-                </div>
-                <div class="critics__content"></div>
-                <div class="critics__info d-flex d-flex-ai-center">
-                  <div class="critics__info-item">
-                    <p class="p4 p4--bold">PROFIT</p>
-                    <p class="p4 p4--bold value">1º</p>
-                  </div>
-                  <div class="critics__info-item">
-                    <p class="p4 p4--bold">experience</p>
-                    <p class="p4 p4--bold value">6 years</p>
-                  </div>
-                  <div class="critics__info-item">
-                    <p class="p4 p4--bold">reviews</p>
-                    <p class="p4 p4--bold value">320</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="aside-wrapper">
-          <div class="content">
+            <section class="filter__tabs bg-white shadow" id="add-filter">
+              <label>
+                <input type="checkbox" name="" /><span
+                  class="border d-flex d-flex-ai-center d-flex-jc-center"
+                  ><span class="content center">
+                    <p class="h4">Best Free Bets</p>
+                    <p class="p3">20 Offers</p></span
+                  ></span
+                >
+              </label>
+              <label>
+                <input type="checkbox" name="" /><span
+                  class="border d-flex d-flex-ai-center d-flex-jc-center"
+                  ><span class="content center">
+                    <p class="h4">Top Sports Bonuses</p>
+                    <p class="p3">14 Offers</p></span
+                  ></span
+                >
+              </label>
+              <label>
+                <input type="checkbox" name="" /><span
+                  class="border d-flex d-flex-ai-center d-flex-jc-center"
+                  ><span class="content center">
+                    <p class="h4">Tipster's Choice</p>
+                    <p class="p3">12 Offers</p></span
+                  ></span
+                >
+              </label>
+            </section>
             <section class="bonuses">
               <div class="bonus bonus--rare shadow shadow--large bg-white">
                 <div class="label">#1 Betting Sites</div>
@@ -763,7 +762,7 @@
             </section>
             <section class="shadow bg-white content-block content-focus top-10">
               <div class="top-10__banner">
-                <img src="./img/banners/banner-fp.png" alt="" />
+                <img src="./img/banners/banner-bbs.png" alt="" />
               </div>
               <div class="content-block__table table default">
                 <table>
@@ -1918,11 +1917,520 @@
             </section>
           </div>
           <div class="aside">
+            <aside class="shadow top-win tabs-block bg-white aside-rating">
+              <p class="h4">Ranking apuestas.club</p>
+              <div class="tabs d-flex d-flex-ai-center">
+                <button
+                  class="p2 tab-item tab-item--active"
+                  data-id="free-bets"
+                >
+                  Free Bets
+                </button>
+                <button class="p2 tab-item" data-id="welcome-bonuses">
+                  Welcome Bonuses
+                </button>
+              </div>
+              <div class="top-win__wrapper aside-rating__wrapper">
+                <div class="tab-wrap tab-wrap--active" data-id="free-bets">
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£15</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£30</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£25</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£25</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£15</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£30</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£25</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£25</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                </div>
+                <div class="tab-wrap" data-id="welcome-bonuses">
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£15</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£30</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£25</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£25</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£15</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£30</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£25</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                  <div class="aside-rating__item">
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <p class="h5">10bet</p>
+                      <p class="h5"><span>£25</span> Free Bet</p>
+                    </div>
+                    <div class="d-flex d-flex-jc-between d-flex-ai-center">
+                      <div class="rating d-flex d-flex-ai-center">
+                        <span class="d-flex d-flex-ai-center"
+                          ><svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="#FBA744">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-icon" fill="transparent">
+                            <use xlink:href="./img/sprite.svg#star"></use></svg
+                        ></span>
+                      </div>
+                      <p class="p4">20X Turnover</p>
+                    </div>
+                    <a href="/"> </a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <aside class="bg-white shadow nav-section content-block">
+              <div class="navigation__content p3">
+                <h3>Explore Club</h3>
+                <p>
+                  Welcome to the number one comparison site for internet
+                  bookmakers in Spain!
+                </p>
+              </div>
+              <div class="navigation__list navigation__list--aside">
+                <a class="navigation__item d-flex d-flex-ai-end" href=""
+                  ><i
+                    class="bg-icon"
+                    style="background-image: url('./img/icons/nav-ball-3.png')"
+                  ></i
+                  ><span class="content">
+                    <p class="p2 p2--bold">How to find</p>
+                    <p class="p2">good betting offer?</p></span
+                  ></a
+                ><a class="navigation__item d-flex d-flex-ai-end" href=""
+                  ><i
+                    class="bg-icon"
+                    style="background-image: url('./img/icons/nav-folder.png')"
+                  ></i
+                  ><span class="content">
+                    <p class="p2 p2--bold">5 Thing to know</p>
+                    <p class="p2">before betting</p></span
+                  ></a
+                ><a
+                  class="navigation__item d-flex d-flex-ai-center d-flex-ff-column d-flex-jc-center"
+                  href=""
+                  ><i
+                    class="bg-icon bg-icon--medium"
+                    style="background-image: url('./img/icons/nav-cup-2.png')"
+                  ></i
+                  ><span class="content center">
+                    <p class="p2 p2--bold">Betting offers</p>
+                    <p class="p2">of different types</p></span
+                  ></a
+                >
+              </div>
+            </aside>
             <aside class="aside-nav shadow bg-white">
               <div class="aside-nav__banner">
                 <i
                   class="bg-icon"
-                  style="background-image: url('./img/banners/fp-aside.png')"
+                  style="background-image: url('./img/banners/bbs-aside.png')"
                 ></i>
               </div>
               <p class="title"><b>Know-how from Mark</b></p>

@@ -1,11 +1,13 @@
 // установка cursor: pointer для активных стран
 const worldMap = document.querySelector(".world__map");
-const countries = worldMap.querySelectorAll("path");
+const countries = document.querySelectorAll(".world__map path");
 const colorActiveMap = "#00B073";
 
 countries.forEach((country) => {
-  if (country.getAttribute("fill") == colorActiveMap) {
-    country.style.cursor = "pointer";
+  if (country) {
+    if (country.getAttribute("fill") == colorActiveMap) {
+      country.style.cursor = "pointer";
+    }
   }
 });
 
@@ -31,13 +33,15 @@ const countryBtnTitle = document.querySelector(".country--active");
 
 countries.forEach((country) => {
   country.addEventListener("click", () => {
-    if (country.getAttribute("id")) {
-      countryBtnLogo.setAttribute(
-        "src",
-        "./img/flag/" + country.getAttribute("id").toLowerCase() + ".png"
-      );
+    if (country) {
+      if (country.getAttribute("id")) {
+        countryBtnLogo.setAttribute(
+          "src",
+          "./img/flag/" + country.getAttribute("id").toLowerCase() + ".png"
+        );
 
-      countryBtnTitle.textContent = country.getAttribute("data-local");
+        countryBtnTitle.textContent = country.getAttribute("data-local");
+      }
     }
   });
 });

@@ -12,7 +12,15 @@
 @import "./components/table";
 
 //подключения основных компонентов страницы
+
+// общие стили
+@import "./components/index";
+
+// header, footer
 @import "./components/header";
+@import "./components/footer";
+
+// страница review
 @import "./components/review-banner";
 @import "./components/aside";
 @import "./components/navigation";
@@ -27,4 +35,10 @@
 @import "./components/support";
 @import "./components/verdict";
 @import "./components/faq";
-@import "./components/footer";
+@import "./components/error";
+
+// страница bonus
+@import "./components/bonus";
+
+// страница about
+@import "./components/about";

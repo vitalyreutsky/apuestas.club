@@ -1,0 +1,39 @@
+.error-wrapper {
+  display: flex;
+  height: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.error {
+  &__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.error-title {
+  position: relative;
+  h1 {
+    font-size: 100px;
+    line-height: 110px;
+  }
+  .label {
+    position: absolute;
+    left: -30px;
+    top: -47px;
+    width: 100px;
+    height: auto;
+  }
+}
+
+.error-text {
+  text-align: center;
+}
+
+.error-btn {
+  display: inline-block;
+}
