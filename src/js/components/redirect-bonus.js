@@ -1,4 +1,4 @@
-const singleBonus = document.getElementsByClassName("single-bonus__wrapper");
+const singleBonus = document.querySelector(".single-bonus__wrapper");
 
 const bonusRedirect = (el) => {
   let link = el[0].dataset.external_link;

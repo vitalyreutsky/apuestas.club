@@ -23,15 +23,7 @@
         // background: #cdd3d7;
         cursor: pointer;
       }
-    }
-
-    &__item {
-      position: relative;
-      padding: 12px 0px;
-      min-width: fit-content;
-      border: none;
-      cursor: pointer;
-      &--active {
+      .active {
         color: var(--accent);
         &::after {
           content: "";
@@ -43,6 +35,14 @@
           background-color: var(--accent);
         }
       }
+    }
+
+    &__item {
+      position: relative;
+      padding: 12px 0px;
+      min-width: fit-content;
+      border: none;
+      cursor: pointer;
     }
   }
 }

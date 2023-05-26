@@ -5,6 +5,7 @@
   </head>
   <body>
     <div class="page-wrapper">
+      @include('partials/modal.html')
       <div>@include('partials/header.html')</div>
       <div>
         <div class="aside-wrapper">
@@ -477,7 +478,7 @@
         </div>
         <div class="aside-wrapper">
           <div class="content">
-            <section class="bonuses">
+            <section class="bonuses content-focus" id="best-betting-sites">
               <div class="bonus bonus--rare shadow shadow--large bg-white">
                 <div class="label">#1 Betting Sites</div>
                 <div class="d-flex d-flex-ai-center">
@@ -761,7 +762,10 @@
                 </div>
               </div>
             </section>
-            <section class="shadow bg-white content-block content-focus top-10">
+            <section
+              class="shadow bg-white content-block content-focus top-10"
+              id="tips"
+            >
               <div class="top-10__banner">
                 <img src="./img/banners/banner-fp.png" alt="" />
               </div>
@@ -1927,7 +1931,7 @@
               </div>
               <p class="title"><b>Know-how from Mark</b></p>
               <ul class="d-flex d-flex-ff-column default">
-                <li class="active" data-id="best-betting-sites">
+                <li data-id="best-betting-sites">
                   <a class="p3" href="#best-betting-sites"
                     >1. Best betting sites</a
                   >

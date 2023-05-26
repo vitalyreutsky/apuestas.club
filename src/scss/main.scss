@@ -10,6 +10,7 @@
 @import "./components/shadow";
 @import "./components/title";
 @import "./components/table";
+@import "./components/modal";
 
 //подключения основных компонентов страницы
 
@@ -42,3 +43,6 @@
 
 // страница about
 @import "./components/about";
+
+// страница контакты
+@import "./components/contacts";

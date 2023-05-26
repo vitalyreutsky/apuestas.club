@@ -1,0 +1,214 @@
+// modal aside
+.modal-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-bg);
+  border-radius: 50%;
+  cursor: pointer;
+  .graph-modal__close {
+    position: static;
+    width: 12px;
+    height: 12px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg fill='gray' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512.001 512.001'%3E%3Cpath d='M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0014.143 5.857 19.94 19.94 0 0014.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z'/%3E%3C/svg%3E");
+  }
+}
+
+.modal-aside {
+  position: fixed;
+  background-color: inherit;
+  right: 0;
+  bottom: 0;
+  padding-right: 20px;
+  overflow: visible;
+
+  .graph-modal__container {
+    display: block;
+    position: relative;
+    max-width: 290px;
+    width: auto;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: default;
+    text-align: left;
+  }
+
+  .modal-content {
+    width: auto;
+
+    &__img {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 86px;
+      height: 86px;
+      background-color: var(--bg-page);
+      border-radius: 50%;
+    }
+
+    &__title {
+      padding-top: 60px;
+      margin-bottom: 6px;
+      span {
+        color: var(--accent);
+      }
+    }
+
+    &__text {
+      margin-bottom: 16px;
+    }
+
+    .form__input-block {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .form__input {
+      outline: none;
+      width: 100%;
+      border: 1px solid var(--gray-line);
+      padding: 10px;
+      font-size: 17px;
+      color: var(--gray-text);
+      border-radius: 4px;
+
+      &::placeholder {
+        font-size: 0;
+      }
+    }
+
+    .form__label {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      font-size: 15px;
+      line-height: 20px;
+      padding: 10px 0;
+      color: var(--gray-text);
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    .form__input:focus + .form__label,
+    .form__input:valid + .form__label {
+      top: -10px;
+      left: 15px;
+      font-size: 12px;
+      background-color: var(--white);
+      padding: 0 10px;
+    }
+  }
+}
+
+.custom-checkbox {
+  @include custom-checkbox;
+
+  &__content {
+    padding-left: 25px;
+    cursor: pointer;
+
+    &::before {
+      width: 16px;
+      height: 16px;
+      background-color: transparent;
+      border-color: var(--gray-line);
+      border-radius: 4px;
+    }
+  }
+}
+
+// modal bonus
+.modal-bonus__container {
+  padding: 6px;
+  width: 1124px;
+  .modal-bonus {
+    display: flex;
+    &__img {
+      flex-shrink: 0;
+      width: 390px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-position: left;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+    }
+
+    &__subtitle {
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      max-width: 522px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      padding: 12px;
+      margin: 0;
+      img {
+        width: 110px;
+        height: auto;
+      }
+    }
+
+    // bonus
+    .bonus {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+    }
+    .bonus-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .bonus-title {
+    }
+
+    .bonus-text {
+    }
+    .bonus-btn {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+  .modal-aside {
+    &__close {
+    }
+  }
+}
