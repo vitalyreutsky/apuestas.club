@@ -1759,16 +1759,21 @@ section {
       background-size: cover;
     }
   }
+
+  &__content {
+    p {
+      margin: 0;
+    }
+  }
 }
 
 .numbered-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   padding: 20px 16px;
   &__item {
-    padding: 20px 16px 0;
-    margin-bottom: 16px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    padding: 20px 16px;
   }
   &__content {
     .index {
@@ -1958,5 +1963,29 @@ section {
         opacity: 1;
       }
     }
+  }
+}
+
+//! online casino last
+.online-casino--last {
+  .table {
+    max-width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  tbody tr td a {
+    text-align: inherit;
+  }
+
+  tbody tr td p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  table tbody tr td {
+    padding: 6px;
+  }
+  table tbody tr td .btn {
+    margin-left: auto;
   }
 }
