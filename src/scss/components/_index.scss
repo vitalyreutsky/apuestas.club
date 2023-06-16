@@ -508,6 +508,12 @@ section {
     padding: 16px 0;
     width: 700px;
     margin: 0 auto;
+
+    .card {
+      &:not(.swiper-slide-active) {
+        opacity: 0.5;
+      }
+    }
   }
   &__item {
     &.bonus {
@@ -527,7 +533,13 @@ section {
       }
     }
     .banner-bonuses__info {
+      display: flex;
+      gap: 2px;
       border-color: #2082e2;
+      div {
+        display: flex;
+        align-items: center;
+      }
       p {
         color: #2082e2;
       }
